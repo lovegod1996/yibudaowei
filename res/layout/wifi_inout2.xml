@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+      <include layout="@layout/title_bar" />
+      <LinearLayout
+      
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+        <TextView 
+           android:id="@+id/welcome1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="25dp"
+           
+           android:text="wifi名称："
+           android:textSize="20dp"  /> 
+           
+              <TextView 
+           android:id="@+id/du1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="25dp"
+           
+           android:text="wifi强度："
+           android:textSize="20dp"  /> 
+           
+              <Button
+        android:id="@+id/in2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:background="@drawable/car_number_bg"
+         android:textSize="25dp"
+       android:textColor="#ffffff"  />  
+           </LinearLayout>
+
+</LinearLayout>

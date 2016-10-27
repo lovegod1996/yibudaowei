@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+         <include layout="@layout/title_bar" />
+         
+            <LinearLayout
+                 
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" >
+                   <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                       android:layout_marginTop="5dp"
+                       
+                        android:text="银行卡" 
+                        android:textSize="13dp"/>  
+                
+                
+                    </LinearLayout>
+                 <RelativeLayout
+                    android:id="@+id/relativelayout_bc_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bc_bg"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                       android:layout_marginLeft="8dp"
+                        android:id="@+id/my_bc_1"
+                        android:text="银行卡号" 
+                        android:textSize="13dp"/>
+                     <EditText 
+                        android:id="@+id/bc_card_number"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" 
+                        android:background="@null"                     
+                        android:inputType="number"  
+                          android:layout_marginLeft="5dp"  
+                        android:padding="5dp"                   
+                        android:layout_toRightOf="@id/my_bc_1"/> 
+                 
+                    
+                   </RelativeLayout>
+                    
+                     <RelativeLayout
+                    android:id="@+id/relativelayout_bc_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                    android:background="@drawable/bc_bg"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                       android:layout_marginLeft="8dp"
+                        android:id="@+id/my_bc_2"
+                        android:text="姓名" 
+                        android:textSize="13dp"/>
+                     <EditText 
+                        android:id="@+id/bc_name"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" 
+                        android:layout_marginLeft="35dp"
+                        android:background="@null"                    
+                        android:inputType="text"    
+                        android:padding="5dp"                   
+                        android:layout_toRightOf="@id/my_bc_2"/> 
+                    
+                    </RelativeLayout>
+                  <RelativeLayout
+                    android:id="@+id/relativelayout_bc_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                    android:background="@drawable/bc_bg"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                       android:layout_marginLeft="8dp"
+                        android:id="@+id/my_bc_3"
+                        android:text="银行预留手机号" 
+                        android:textSize="13dp"/>
+                     <EditText 
+                        android:id="@+id/bc_phone"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"  
+                        android:background="@null"  
+                         android:layout_marginLeft="5dp"                  
+                        android:inputType="phone"    
+                        android:padding="5dp"                   
+                        android:layout_toRightOf="@id/my_bc_3"/> 
+                    
+                    </RelativeLayout>   
+                    
+                   <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"    
+                     android:layout_margin="10dp" >
+                  <Button
+                        android:id="@+id/down_next"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" 
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp" 
+                        android:text="下一步" 
+                        android:background="@drawable/login_btn"  
+                         android:textColor="@color/white"/>
+         </RelativeLayout>
+   
+</LinearLayout>

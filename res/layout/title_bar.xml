@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:id="@+id/layout_titlebar"  
+    android:layout_width="match_parent"  
+    android:layout_height="50dp"  
+    android:background="#6495ED" >  
+  
+    <TextView  
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"  
+        android:ellipsize="marquee"  
+        android:gravity="center_horizontal|center"  
+        android:singleLine="true"  
+        android:text="@string/app_name"  
+        android:textColor="#ffffffff"  
+        android:textSize="20sp" />  
+  
+    <Button  
+        android:id="@+id/button_back" 
+        android:layout_width="60dp"  
+        android:layout_height="match_parent"  
+        android:background="#6495ED"  
+        android:drawableLeft="@drawable/turn_left"  
+        android:drawablePadding="6dp"  
+        android:ellipsize="end"  
+        android:gravity="center"  
+        android:onClick="onClick"  
+        android:paddingLeft="5dp"  
+        android:singleLine="true"    
+        android:textColor="#ffffffff"  
+        android:textSize="18sp"  
+        android:visibility="visible" />  
+  
+    <Button  
+        android:id="@+id/button_other"  
+        android:layout_width="60dp"  
+        android:layout_height="match_parent"  
+        android:layout_alignParentRight="true"  
+        android:background="#6495ED" 
+        android:drawableRight="@drawable/title_bar_person" 
+        android:drawablePadding="6dp"  
+        android:ellipsize="end"  
+        android:gravity="center"   
+        android:onClick="onClick"  
+        android:paddingLeft="5dp"  
+        android:singleLine="true"  
+      android:layout_marginRight="10dp"
+        android:textColor="#ffffffff"  
+        android:textSize="18sp"  
+        android:visibility="visible" />  
+  <!-- android:layout_alignParentRight="true" -->
+</RelativeLayout>  

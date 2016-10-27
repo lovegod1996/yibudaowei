@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+   >
+    
+    <include layout="@layout/title_bar" />
+    <RelativeLayout
+      
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+         android:background="@drawable/tutu222">
+      <RelativeLayout
+       android:id="@+id/re1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="45dp"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+android:background="@drawable/re1_bg">
+         <TextView 
+           android:id="@+id/welcome0"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="35dp" 
+           android:layout_marginLeft="10dp" 
+           android:text="欢迎用户："
+           android:textSize="20dp"  /> 
+        <TextView 
+           android:id="@+id/we_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="35dp"
+           android:layout_marginLeft="2dp"
+           android:layout_toRightOf="@id/welcome0"
+           android:text="名字"
+           android:textSize="20dp"  /> 
+        <TextView 
+           android:id="@+id/welcome"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+            android:layout_below="@id/we_name"
+          android:layout_marginLeft="10dp" 
+           android:text="进入"
+           android:textSize="20dp"  /> 
+           
+         <TextView
+          android:id="@+id/pa_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/welcome"
+            android:layout_marginLeft="5dp"
+          android:text="停车场名"
+          android:layout_below="@id/we_name"
+          android:textSize="24dp" /> 
+        <TextView
+          android:id="@+id/pa_2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp" 
+          android:text="现有空车位："
+           android:layout_below="@id/pa_name"
+          android:textSize="20dp" /> 
+        <TextView
+          android:id="@+id/pa_left"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@id/pa_2"
+          android:layout_below="@id/pa_name"
+           android:layout_marginTop="10dp"
+          android:text="aaa"
+          android:textSize="20dp" /> 
+          
+         <TextView
+          android:id="@+id/pa_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp" 
+          android:text="进场时间："
+           android:layout_below="@id/pa_2"
+          android:textSize="20dp" /> 
+           <TextView
+          android:id="@+id/pa_time2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+          android:text="进场时间："
+           android:layout_below="@id/pa_2"
+            android:layout_toRightOf="@id/pa_time"
+          android:textSize="20dp" /> 
+           <TextView
+          android:id="@+id/pa_standard"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp" 
+           android:layout_marginBottom="5dp" 
+          android:text="收费标准："
+           android:layout_below="@id/pa_time"
+          android:textSize="20dp" /> 
+           <TextView
+          android:id="@+id/pa_standard2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp" 
+          android:text="进场时间："
+           android:layout_below="@id/pa_time"
+            android:layout_toRightOf="@id/pa_standard"
+          android:textSize="20dp" /> 
+          </RelativeLayout>
+           <Button
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+    android:layout_below="@id/re1"
+        android:background="@drawable/inout_btn_bg"
+         android:textSize="25dp"
+       android:textColor="#ffffff"  />   
+        
+ 
+</RelativeLayout>
+</LinearLayout>

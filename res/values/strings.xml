@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">一步到位</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="account_hint">手机号</string>
+    <string name="password_hint">密码</string> 
+    <string name="login">登录</string>
+    <string name="register">注册</string> 
+    <string name="phoneNumber">请输入你的手机号</string>
+    <string name="code">发送验证码</string>
+    <string name="button_next">下一步</string> 
+    <string name="name_hint">姓名</string>
+    <string name="password1_hint">请设置密码</string>
+    <string name="password2_hint">请再次输入密码</string>
+    
+    <string name="che_number_shuzi">请输入车牌号</string>  
+    <string name="tishi">请输入您的车牌号，点击“豫”可切换省份</string> 
+    <string name="xieyi">协议</string> 
+    <string name="button_register">注册</string>   
+    <string name="out_login">退出登录</string>  
+    <string name="other"> </string>  
+    <string name="ture_left"> </string>  
+    <string name="old_password">请输入原密码</string>
+    <string name="new_password1">请输入新密码</string>
+    <string name="new_password2">请再次输入新密码</string>  
+    
+    <string name="about">关于我们</string> 
+    <string name="feedback">意见反馈</string> 
+    <string name="set">设置</string> 
+    <string name="checkW">查违章 </string>
+    <string name="parkQ">停车券</string>  
+    <string name="money">我的钱包</string> 
+    <string name="login_register">登录/注册</string>
+     
+    <string name="confirm">确定</string> 
+    
+    
+</resources>

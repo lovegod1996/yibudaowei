@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+         <include layout="@layout/title_bar" />
+         <LinearLayout
+        android:id="@+id/my_user_head_2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+       android:background="@drawable/textbox"
+        android:orientation="vertical">
+          <EditText 
+            android:id="@+id/user_name"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:inputType="text"
+            android:hint="@string/name_hint"
+            android:layout_margin="2dp"/>
+        <EditText
+            android:id="@+id/password1"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:inputType="textPassword"
+            android:hint="@string/password1_hint"
+            android:layout_margin="2dp"/>
+
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            android:ems="10"
+            android:hint="@string/password2_hint"
+            android:inputType="textPassword"
+            android:padding="5dp" >
+
+            <requestFocus />
+        </EditText>
+         
+    </LinearLayout>
+      <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"     
+       android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"> 
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/tishi"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"
+            android:textColor="#666666"/>
+            </LinearLayout>
+       <LinearLayout
+        android:id="@+id/my_user_car"
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+         android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/register_phone_bg">
+       <Button 
+        android:id="@+id/car_number"
+        android:layout_height="match_parent"
+        android:layout_width="90dp"
+        
+        android:text="豫"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:background="@drawable/car_number_bg"/>
+       
+        <EditText 
+            android:id="@+id/car_number_shuzi"
+            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:hint="@string/che_number_shuzi"
+            android:background="@android:color/white"
+            android:padding="5dp"/>
+      </LinearLayout>  
+      
+       <LinearLayout
+        android:id="@+id/my_user_car"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+       >
+       <Button 
+        android:id="@+id/car_number"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        
+        android:text="请绑定银行卡"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:background="@drawable/car_number_bg"/>
+         </LinearLayout>      
+       
+     <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"       
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+        <CheckBox 
+            android:id="@+id/ck_agreen"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/checkbox"
+            android:button="@null"
+            android:checked="true"/>
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/xieyi"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"/>
+        </LinearLayout>
+        <Button 
+        android:id="@+id/my_register"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:text="@string/button_register"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/login_btn"/>
+</LinearLayout>

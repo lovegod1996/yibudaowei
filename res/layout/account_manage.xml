@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      <include layout="@layout/title_bar" />
+      <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/user_information_bg_1"
+                android:orientation="vertical" >
+ 
+                    
+                  
+      <RelativeLayout
+                    android:id="@+id/relativelayout_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/textbox"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/person_user_number"
+                        android:text="账号" 
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                         android:layout_marginRight="20dp"
+                         android:layout_alignParentRight="true"
+                        android:id="@+id/user_number"
+                        android:text=""
+                        android:textSize="15dp" />
+                    
+                    
+                   </RelativeLayout>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/devide_line" />
+     
+          <RelativeLayout
+                    android:id="@+id/relativelayout_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/textbox"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/person_user_name"
+                        android:text="姓名"
+                        android:textSize="15dp" />
+                     
+                     <TextView
+                         android:id="@+id/setting_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                         android:layout_marginRight="20dp"
+                         android:layout_alignParentRight="true"   
+                        android:text=""
+                        android:textSize="15dp" />
+                      
+    
+                   </RelativeLayout>
+                   <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/devide_line" />
+                <RelativeLayout
+                    android:id="@+id/relativelayout_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/textbox"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/person_user_sex"
+                        android:text="性别" 
+                        android:textSize="15dp"/>
+                     <Button  
+                        android:id="@+id/setting_user_sex" 
+                        android:layout_width="80dp"  
+                        android:layout_height="match_parent"  
+                        android:layout_marginRight="10dp"
+                         android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#FFFFFF"  
+                        android:drawableRight="@drawable/turn_right"  
+                        android:drawablePadding="6dp"  
+                        android:ellipsize="end"  
+                        android:gravity="center"  
+                        android:singleLine="true"  
+                        android:text="未设置"  
+                        android:textColor="#AAAAAA"  
+                        android:textSize="15dp"  
+                        android:enabled="false"
+                        android:visibility="visible" />  
+                   
+                   
+                   </RelativeLayout>
+                   <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/devide_line" />
+               <RelativeLayout
+                    android:id="@+id/relativelayout_change_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/textbox"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/person_change_password"
+                        android:text="修改密码"
+                        android:textSize="15dp" />
+                   
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/turn_right" />
+                   </RelativeLayout>
+                   <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/devide_line" />
+     
+     </LinearLayout>
+<Button 
+        android:id="@+id/out_login"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:text="@string/out_login"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:background="@drawable/login_btn"/>
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <include layout="@layout/title_bar" />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         
+         android:orientation="vertical"
+         android:background="@drawable/parking_one_bg" >
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" 
+             android:layout_marginTop="30dp"
+          >
+
+             <ImageView
+                 android:id="@+id/park_picture"
+                 android:layout_width="60dp"
+                 android:layout_height="60dp"
+                 android:layout_centerHorizontal="true"
+                 android:src="@drawable/pack_record" />
+
+             <TextView
+                 android:id="@+id/p_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@id/park_picture"
+                 android:layout_centerInParent="true"
+                 android:layout_marginTop="8dp"
+                 android:text="停车场我上线无所事事"
+                 android:textSize="20dp" />
+         </RelativeLayout>
+<LinearLayout
+                android:id="@+id/linearlayout_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+             android:layout_margin="10dp" >
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp" >
+
+             <TextView
+                 android:id="@+id/p_lot_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginTop="10dp"
+                 android:text="现有空车位："
+                 android:textSize="18dp" />
+             <TextView
+                 android:id="@+id/p_lot"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toRightOf="@id/p_lot_name"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginLeft="10dp"
+                 android:text="0"
+                 android:textSize="18dp" />
+             
+         </RelativeLayout>
+         <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/devide_line" />
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" 
+              android:layout_marginTop="10dp" >
+
+             <TextView
+                 android:id="@+id/p_address_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginTop="10dp"
+                 android:text="地址："
+                 android:textSize="18dp" />
+             <TextView
+                 android:id="@+id/p_address"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toRightOf="@id/p_address_name"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginLeft="10dp"
+                 android:text="0"
+                 android:textSize="18dp" />
+             
+         </RelativeLayout>
+         <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/devide_line" />
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" 
+              android:layout_marginTop="10dp" >
+
+             <TextView
+                 android:id="@+id/p_phone_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginTop="10dp"
+                 android:text="联系电话："
+                 android:textSize="18dp" />
+             <TextView
+                 android:id="@+id/p_phone"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toRightOf="@id/p_phone_name"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginLeft="10dp"
+                 android:text="0"
+                 android:textSize="18dp" />
+             
+         </RelativeLayout>
+         <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/devide_line" />
+          <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+              android:layout_marginTop="10dp" >
+
+             <TextView
+                 android:id="@+id/p_fee_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginTop="10dp"
+                 android:text="收费标准："
+                 android:textSize="18dp" />
+             <TextView
+                 android:id="@+id/p_fee"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toRightOf="@id/p_fee_name"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginLeft="10dp"
+                 android:text="0"
+                 android:textSize="18dp" />
+             <TextView
+                 android:id="@+id/p_f"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toRightOf="@id/p_fee"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginLeft="10dp"
+                 android:text="元/小时"
+                 android:textSize="18dp" />
+             
+         </RelativeLayout>
+         <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/devide_line" />
+         </LinearLayout>
+     </LinearLayout>
+
+</LinearLayout>

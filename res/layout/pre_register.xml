@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <include android:id="@+id/title_bar"   
+     layout="@layout/title_bar" />  
+   <LinearLayout
+        android:id="@+id/phone"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/register_phone_bg">
+       
+		<EditText 
+		         android:id="@+id/phoneNumber"
+		         android:layout_height="56dp"
+		         android:layout_width="match_parent"
+		         android:layout_marginRight="2dp"
+		         android:layout_marginLeft="2dp"
+		         android:layout_marginTop="2dp"
+		         android:layout_marginBottom="2dp"
+		         android:hint="@string/phoneNumber"
+		         android:background="@android:color/white"
+		         android:inputType="phone"
+		         android:padding="5dp"/>
+    </LinearLayout>
+
+   
+   
+   
+   
+     <LinearLayout
+        
+        android:layout_width="match_parent"
+         android:layout_height="60dp"
+         android:layout_margin="20dp"
+        android:orientation="horizontal" >
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/register_phone_bg" >
+  
+	    
+	    <EditText
+                android:id="@+id/et_phoneCodes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="请输入右侧验证码"
+                android:background="@null" />
+  </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_showCode"
+            android:layout_width="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent" />
+        
+    </LinearLayout>
+    
+     <Button 
+        android:id="@+id/button_next"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:text="@string/button_next"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/login_btn"/>
+</LinearLayout>

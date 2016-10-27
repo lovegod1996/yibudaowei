@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <include layout="@layout/title_bar" />
+   <LinearLayout
+        android:id="@+id/my_user_pass_1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+       android:background="@drawable/textbox"
+        android:orientation="vertical">
+          <EditText 
+            android:id="@+id/old_password"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:inputType="textPassword"
+            android:hint="@string/old_password"
+            android:layout_margin="2dp"/>
+        <EditText
+            android:id="@+id/new_password1"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:inputType="textPassword"
+            android:hint="@string/new_password1"
+            android:layout_margin="2dp"/>
+
+        <EditText 
+            android:id="@+id/new_password2"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:inputType="textPassword"
+            android:hint="@string/new_password2"
+            android:layout_margin="2dp"/>
+         
+    </LinearLayout>
+     <Button 
+        android:id="@+id/change_ok"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:text="@string/confirm"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/login_btn"/>
+</LinearLayout>
